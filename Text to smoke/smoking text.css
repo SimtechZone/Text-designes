@@ -1,0 +1,61 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #262626;
+	font-family: verdana;
+}
+.center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+ul li{
+	list-style: none;
+	font-size: 6em;
+	letter-spacing: 10px;
+	font-weight: bold;
+	color: #fff;
+	filter: blur(1px);
+}
+ul:hover li{
+	animation: smoke 5s linear forwards;
+}
+@keyframes smoke{
+	0%{
+		transform: rotate(0deg) translateY(0);
+		opacity: 1;
+		filter: blur(1px);
+	}
+	100%{
+		transform: rotate(45deg) translateY(-200px);
+		opacity: 0;
+		filter: blur(20px);
+	}
+}
+ul li:nth-child(1){
+	animation-delay: 0.7s;
+}
+ul li:nth-child(2){
+	animation-delay: 1.4s;
+}
+ul li:nth-child(3){
+	animation-delay: 2.1s;
+}
+ul li:nth-child(4){
+	animation-delay: 2.8s;
+}
+ul li:nth-child(5){
+	animation-delay: 3.5s;
+}
+ul li:nth-child(6){
+	animation-delay: 4.2s;
+}
+ul li:nth-child(7){
+	animation-delay: 4.9s;
+}
